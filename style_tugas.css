@@ -1,0 +1,102 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Form styling */
+.form-tugas {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-tugas label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-tugas input,
+.form-tugas select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-tugas input:focus,
+.form-tugas select:focus {
+  border-color: #0288d1;
+  outline: none;
+}
+
+/* Tombol Submit */
+.btn-submit {
+  padding: 12px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0279c1;
+}
+
+/* Tombol Kembali */
+.btn-kembali {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  color: #0288d1;
+  font-weight: 600;
+  border: 1px solid #0288d1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-kembali:hover {
+  background-color: #e0f7fa;
+  color: #0279c1;
+}
+
+/* Alert Sukses */
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-left: 4px solid #28a745;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,230 @@
+/* Warna utama */
+:root {
+  --biru-muda: #e0f7fa;
+  --biru: #0288d1;
+  --hijau: #4caf50;
+  --hijau-muda: #e8f5e9;
+  --putih: #ffffff;
+  --abu: #f8f9fa;
+  --teks-utama: #212121;
+  --teks-lembut: #555;
+}
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--abu);
+  color: var(--teks-utama);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--putih);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--biru);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--teks-utama);
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: var(--biru);
+}
+
+/* Container Layout */
+.container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--biru-muda);
+  padding: 1.5rem;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h1 {
+  color: var(--biru);
+  margin-bottom: 1rem;
+}
+
+.sidebar h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.sidebar label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.sidebar select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+}
+
+.main-content h2 {
+  margin-bottom: 1rem;
+  color: var(--biru);
+}
+
+.btn-tambah {
+  display: inline-block;
+  background-color: var(--biru);
+  color: var(--putih);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-tambah:hover {
+  background-color: #026aa7;
+}
+
+/* Kartu Tugas */
+.card {
+  background-color: var(--putih);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  border-left: 5px solid var(--biru);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.card h4 {
+  color: var(--biru);
+  margin-bottom: 0.3rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--teks-lembut);
+  margin: 0.2rem 0;
+}
+
+
+.status-container {
+    margin-top: 8px;
+}
+
+.status-select {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.8rem;
+    background-color: white;
+    color: var(--teks-utama);
+}
+
+.status-select option {
+    background-color: white;
+}
+
+.card form {
+    margin-top: 10px;
+}
+
+.lewat {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Info sisa hari */
+.sisa-hari {
+  font-size: 0.75rem;
+  color: #888;
+  margin-left: 5px;
+}
+
+/* Opsional - Warna info sisa hari dinamis */
+.hari-dekat {
+  color: red;
+  font-weight: bold;
+}
+
+.hari-jauh {
+  color: green;
+}
+
+.status-badge {
+  margin-top: 0.5rem;
+}
+
+/* Badge Status Tugas */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 20px;
+  color: white;
+  margin-top: 8px;
+}
+
+.badge.belum {
+  background-color: #f6c23e; /* kuning */
+}
+
+.badge.proses {
+  background-color: #36b9cc; /* biru muda */
+}
+
+.badge.selesai {
+  background-color: #1cc88a; /* hijau */
+}
+
+.badge.lewat {
+  background-color: #ff6b6b; /* merah */
+  margin-left: 6px;
+}
